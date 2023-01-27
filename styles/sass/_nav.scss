@@ -1,0 +1,33 @@
+.navBar{
+    background-color: white;
+    .navTitle{
+        width: auto;
+        font-family: 'Nunito', sans-serif;
+    }
+    .navLinks {
+        display: flex;
+        align-items: center;
+    }   
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar a{
+    padding-left: 20px;
+    font-family: "PT Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+a.getInTouch {
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #FBAF01;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+}

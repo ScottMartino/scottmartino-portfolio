@@ -1,0 +1,43 @@
+.skills{
+    background-color: #3D48AE;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    h2{
+        font-family: "Nunito", sans-serif;
+    }
+    p{
+        font-family: "PT Sans", sans-serif;
+    }
+}
+
+.skillsText {
+    width: 30%;
+}
+
+.skillsContainer {
+    display: flex;
+}
+
+.listOne ul{
+    list-style: none;
+    li::before {
+        content: "• ";
+        color:#FBAF01 ;
+    }
+}
+
+.listTwo ul {
+    list-style: none;
+     li::before {
+        content: "• ";
+        color: #FBAF01;
+    }
+}
+.listThree ul {
+    list-style: none;
+    li::before {
+        content: "• ";
+        color: #FBAF01;
+    }
+}

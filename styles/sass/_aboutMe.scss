@@ -1,0 +1,15 @@
+.aboutMe{
+    display: flex;
+    background-color: #E7E8EE ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .wrapper{
+        display: flex;
+    }
+    .aboutMeIcon{
+        img{
+            width: 100%;
+        }
+    }
+}
+

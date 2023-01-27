@@ -4,13 +4,171 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=PT+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Document</title>
 </head>
 <body>
-	<div class="wrapper">
-		<h1>My Portfolio</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eligendi natus quia adipisci assumenda voluptates animi repudiandae molestias reprehenderit ea.</p>
-	</div>
+	<!-- Start of Nav -->
+	<nav class="navBar">
+		<div class="wrapper">
+			<div class="navContainer">
+				<div class="navTitle">
+					<h2>sm.</h2>
+				</div>
+				<div class="navLinks">
+					<a href="#top">home</a>
+					<a href="#aboutMe">about</a>
+					<a href="#projects">projects</a>
+					<a href="#contact" class="getInTouch">get in touch</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- End of Nav -->
+	<!-- Start of Header -->
+	<header class="header">
+		<div class="wrapper">
+			<div class="headerText">
+				<h1>scott martino</h1>
+				<p>toronto based web developer</p>
+			</div>
+			<div class="headerIcon">
+				<img src="./assets/22.png" alt="illustration of man coding">
+			</div>
+		</div>
+	</header>
+	<!-- End of Header -->
+	<!-- Start of Main -->
+	<main>
+		<section class="aboutMe" id="aboutMe">
+			<div class="wrapper">
+				<div class="aboutMeIcon">
+					<img src="./assets/484.png" alt="illustration of smiley face">
+				</div>
+				<div class="aboutMeText">
+					<h2>about me</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero, laboriosam reprehenderit, repudiandae, dolorem quisquam mollitia sed rerum laborum nostrum molestias quae? Sequi beatae molestiae velit consequatur facere reiciendis quod.</p>
+				</div>
+			</div>
+		</section>
+		<section class="skills">
+			<div class="wrapper">
+				<div class="skillsContainer">
+					<div class="skillsText">
+						<h2>skills</h2>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, impedit!</p>
+					</div>
+					<div class="listOne">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>SASS</li>
+							<li>JavaScript</li>
+						</ul>
+					</div>
+					<div class="listTwo">
+						<ul>
+							<li>React</li>
+							<li>Firebase</li>
+							<li>Git and Github</li>
+							<li>Netlify</li>
+						</ul>
+					</div>
+					<div class="listThree">
+						<ul>
+							<li>Using REST API's with AJAX</li>
+							<li>Web accessibility</li>
+							<li>Paired Programming</li>
+							<li>Project Management</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="projects" id="projects">
+			<div class="wrapper">
+				<h2>projects</h2>
+				<div class="projectOne">
+					<div class="projectOneImage">
+						<img src="./assets/397.png" alt="illustration of coding">
+					</div>
+					<div class="projectOneText">
+						<h3>Willow PDS Conversion</h3>
+						<h4>HTML, CSS, SASS</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia voluptatibus quidem repellendus ullam dolorem!</p>
+						<a href="">view live</a>
+						<a href="">view code</a>
+					</div>
+				</div>
+				<div class="projectTwo">
+					<div class="projectTwoImage">
+						<img src="./assets/389.png" alt="illustration of coding">
+					</div>
+					<div class="projectTwoText">
+						<h3>Pokemon Battle Simulator</h3>
+						<h4>HTML, CSS, SASS, JavaScript</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia voluptatibus quidem repellendus ullam
+						dolorem!</p>
+						<a href="">view live</a>
+						<a href="">view code</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="wrapper">
+				<div class="contactContainer">
+					<div class="getInTouch">
+						<div class="contactText">
+							<h2>get in touch</h2>
+							<p>Please feel free to contact me through the links below or the form to the right.</p>
+						</div>
+						
+						<div class="contactLinks">
+							<div class="facebookLink">
+								<a href="https://www.facebook.com"><img src="./assets/facebook.svg" alt="facebook icon"></a>
+							</div>
+							<div class="twitterLink">
+								<a href="https://www.twitter.com"><img src="./assets/twitter.svg" alt="twitter icon"></a>
+							</div>
+							<div class="linkedinLink">
+								<a href="https://www.linkedin.com"><img src="./assets/linkedin.svg" alt="linkedin icon"></a>
+							</div>
+							<div class="instagramLink">
+								<a href="https://www.github.com"><img src="./assets/instagram.svg" alt="instagram icon"></a><br>
+							</div>
+						</div>
+					</div>
+
+					<div class="form">
+						<div class="formInput">
+							<form action="#" class="contactForm">
+								
+								<label for="name">NAME</label><br>
+								<input type="text" name="name" id="name" class="formName"><br>
+								
+								<label for="email" class="contactEmail">EMAIL</label><br>
+								<input type="email" name="email" id="email" class="formEmail"><br>
+								
+								<label for="message">MESSAGE</label><br>
+								<input type="text" name="message" id="message" class="formMessage">
+							</form>
+						</div>
+						<div class="formButton">
+							<a href="#">submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- End of Main -->
+	<!-- Start of Footer -->
+	<footer class="footer">
+		<div class="wrapper">
+			<h4>Built in 2023 by Scott Martino</h4>
+		</div>
+	</footer>
 </body>
 </html>

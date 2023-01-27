@@ -1,0 +1,78 @@
+.contact {
+    background-color: #DFE0FC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contactContainer {
+    display:flex;
+}
+
+.contactText{
+    width:50%;
+    padding-bottom: 20px;
+    h2{
+        font-family: "Nunito", sans-serif;
+    }
+    p{
+        font-family: "PT Sans", sans-serif;
+        font-size: 16px;
+    }
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: space-around;
+    width:80%;
+}
+
+.facebookLink {
+    width: 5%;
+}
+.twitterLink,
+.linkedinLink,
+.instagramLink {
+    width: 8%;
+}
+
+.form {
+    flex-basis: 65%;
+}
+
+.getInTouch {
+    flex-basis: 45%;
+}
+
+.formInput label{
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+}
+
+.formName {
+    padding-right: 200px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.formEmail {
+    padding-right: 200px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.formMessage {
+    padding-right: 200px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.formButton a{
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #FBAF01;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
