@@ -5,6 +5,7 @@
     color: white;
     h2{
         font-family: "Nunito", sans-serif;
+        height: 30px;
     }
     p{
         font-family: "PT Sans", sans-serif;
@@ -12,32 +13,25 @@
 }
 
 .skillsText {
-    width: 30%;
+    width: 20%;
 }
 
 .skillsContainer {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.listOne ul{
-    list-style: none;
+.listOne ul,
+.listTwo ul, 
+.listThree ul{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    list-style: none;  
     li::before {
         content: "• ";
         color:#FBAF01 ;
     }
 }
 
-.listTwo ul {
-    list-style: none;
-     li::before {
-        content: "• ";
-        color: #FBAF01;
-    }
-}
-.listThree ul {
-    list-style: none;
-    li::before {
-        content: "• ";
-        color: #FBAF01;
-    }
-}
