@@ -1,0 +1,68 @@
+@media (max-width: 950px){
+    .listOne ul,
+    .listTwo ul,
+    .listThree ul {
+        font-size: 15px;
+    };
+};
+
+@media (max-width: 800px) {
+    .projectTwoText {
+        width: 60%;
+    };
+    .projectOneText {
+        width: 60%;
+    };
+    .projects{
+        padding-top: 0;
+        padding-bottom: 25px;
+    };
+    .navBar {
+        position: static;
+    };
+    .headerContainer {
+        flex-direction: column;
+    };
+};
+
+@media (max-width: 685px){
+    .skillsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    };
+    .aboutMe .wrapper{
+        flex-direction: column;
+        align-items: center;
+    };
+    .projectOne{
+        display: block;
+    };
+    .projectTwo{
+        display: block;
+    };
+    .contactContainer {
+        flex-direction: column;
+    };
+    .contactText{
+        width: 100%;
+    }
+    .form{
+        padding-top: 30px;
+    }
+};
+
+@media (max-width:450px){
+    .formName,
+    .formEmail,
+    .formMessage{   
+        padding-right: 20%;
+    };
+    .navBar {
+        flex-direction: column;
+    };
+    .navBar a{
+        padding-left: 5px;
+    };
+    
+};

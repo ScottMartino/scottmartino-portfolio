@@ -6,7 +6,7 @@
         flex-direction: column;
     }
     img {
-        width: 80%;
+        max-width: 70%;
         background-color: #E7E8EE;
     }
     a {
@@ -29,11 +29,19 @@
     }
 }
 
+.projectTwoText {
+    width: 50%;
+}
+
+.projectOneText {
+    width: 50%;
+}
+
 .projectOne {
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
-    align-items: center; 
+    align-items: center;
 }
 
 .projectTwo {

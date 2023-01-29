@@ -26,12 +26,10 @@
     width:80%;
 }
 
-.facebookLink {
-    width: 5%;
-}
-.twitterLink,
+.gitHubLink,
 .linkedinLink,
-.instagramLink {
+.instagramLink,
+.emailLink {
     width: 8%;
 }
 
@@ -49,30 +47,31 @@
 }
 
 .formName {
-    padding-right: 200px;
+    padding-right: 50%;
     margin-bottom: 10px;
     border: none;
 }
 
 .formEmail {
-    padding-right: 200px;
+    padding-right: 50%;
     margin-bottom: 10px;
     border: none;
 }
 
 .formMessage {
-    padding-right: 200px;
-    padding-bottom: 100px;
+    padding-right: 50%;
+    padding-bottom: 25%;
     margin-bottom: 20px;
     border: none;
 }
 
-.formButton a{
-    padding: 5px 10px 5px 10px;
+.formButton {
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
     color: black;
     background-color: #FBAF01;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
+    border: none;
 }

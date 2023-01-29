@@ -8,8 +8,11 @@
     }
     .aboutMeIcon{
         img{
-            width: 100%;
+            max-width: 100%;
         }
+    }
+    .aboutMeText{
+        max-width: 60%;
     }
 }
 

@@ -243,6 +243,7 @@ h2 {
 
 p {
   font-family: "PT Sans", sans-serif;
+  line-height: 1.5;
 }
 
 h1 {
@@ -253,14 +254,16 @@ h1 {
 
 .navBar {
   background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 .navBar .navTitle {
   width: 10%;
@@ -309,8 +312,8 @@ header .headerContainer {
 header .headerContainer .headerText {
   -ms-flex-item-align: center;
       align-self: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 header .headerContainer .headerIcon img {
   width: 100%;
@@ -330,7 +333,10 @@ header .headerContainer .headerIcon img {
   display: flex;
 }
 .aboutMe .aboutMeIcon img {
-  width: 100%;
+  max-width: 100%;
+}
+.aboutMe .aboutMeText {
+  max-width: 60%;
 }
 
 .skills {
@@ -344,6 +350,9 @@ header .headerContainer .headerIcon img {
   height: 30px;
 }
 .skills p {
+  font-family: "PT Sans", sans-serif;
+}
+.skills li {
   font-family: "PT Sans", sans-serif;
 }
 
@@ -397,7 +406,7 @@ header .headerContainer .headerIcon img {
           flex-direction: column;
 }
 .projects img {
-  width: 80%;
+  max-width: 70%;
   background-color: #E7E8EE;
 }
 .projects a {
@@ -417,6 +426,14 @@ header .headerContainer .headerIcon img {
 }
 .projects p {
   font-family: "PT Sans", sans-serif;
+}
+
+.projectTwoText {
+  width: 50%;
+}
+
+.projectOneText {
+  width: 50%;
 }
 
 .projectOne {
@@ -473,13 +490,10 @@ header .headerContainer .headerIcon img {
   width: 80%;
 }
 
-.facebookLink {
-  width: 5%;
-}
-
-.twitterLink,
+.gitHubLink,
 .linkedinLink,
-.instagramLink {
+.instagramLink,
+.emailLink {
   width: 8%;
 }
 
@@ -499,36 +513,123 @@ header .headerContainer .headerIcon img {
 }
 
 .formName {
-  padding-right: 200px;
+  padding-right: 50%;
   margin-bottom: 10px;
   border: none;
 }
 
 .formEmail {
-  padding-right: 200px;
+  padding-right: 50%;
   margin-bottom: 10px;
   border: none;
 }
 
 .formMessage {
-  padding-right: 200px;
-  padding-bottom: 100px;
+  padding-right: 50%;
+  padding-bottom: 25%;
   margin-bottom: 20px;
   border: none;
 }
 
-.formButton a {
-  padding: 5px 10px 5px 10px;
+.formButton {
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
   color: black;
   background-color: #FBAF01;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  border: none;
 }
 
 footer {
   background-color: #3d48AE;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media (max-width: 950px) {
+  .listOne ul,
+.listTwo ul,
+.listThree ul {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .projectTwoText {
+    width: 60%;
+  }
+  .projectOneText {
+    width: 60%;
+  }
+  .projects {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+  .navBar {
+    position: static;
+  }
+  .headerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 685px) {
+  .skillsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectOne {
+    display: block;
+  }
+  .projectTwo {
+    display: block;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactText {
+    width: 100%;
+  }
+  .form {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .formName,
+.formEmail,
+.formMessage {
+    padding-right: 20%;
+  }
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navBar a {
+    padding-left: 5px;
+  }
 }

@@ -1,25 +1,25 @@
 .navBar{
     background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-between;
+    position: sticky; top:0;
     .navTitle{
         width: 10%;
-    }
+    };
     p{
         font-family: "Ninuto", sans-serif;
         font-size: 40px;
-    }
-    
-}
+    };
+};
 
 .navContainer {
     display:flex;
     .navLinks{
         align-self: center;
-    }
-}
+    };
+};
 
 .navBar a{
     padding-left: 20px;
@@ -27,7 +27,7 @@
     text-decoration: none;
     color: black;
     font-size: 15px;
-}
+};
 
 a.getInTouch {
     padding: 8px 15px 8px 15px;
@@ -36,4 +36,4 @@ a.getInTouch {
     background-color: #FBAF01;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-}
+};
