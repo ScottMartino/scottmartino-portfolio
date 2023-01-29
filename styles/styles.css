@@ -284,11 +284,14 @@ h1 {
 }
 
 .navBar a {
-  padding-left: 20px;
+  margin-left: 20px;
   font-family: "PT Sans", sans-serif;
   text-decoration: none;
   color: black;
   font-size: 15px;
+}
+.navBar a:hover, .navBar a:focus {
+  color: blue;
 }
 
 a.getInTouch {
@@ -411,11 +414,11 @@ header .headerContainer .headerIcon img {
 }
 .projects a {
   text-decoration: none;
-  background-color: #FBAF01;
   font-family: "PT Sans", sans-serif;
-  padding: 5px 10px 5px 10px;
-  color: black;
-  font-size: 15px;
+  color: #3D48AE;
+}
+.projects a:hover, .projects a:focus {
+  color: #FBAF01;
 }
 .projects h3 {
   font-family: "Nunito", sans-serif;
@@ -457,6 +460,21 @@ header .headerContainer .headerIcon img {
   padding-bottom: 10px;
 }
 
+.projectTwoLinks a,
+.projectOneLinks a {
+  text-decoration: none;
+  background-color: #FBAF01;
+  font-family: "PT Sans", sans-serif;
+  padding: 5px 10px 5px 10px;
+  color: black;
+  font-size: 15px;
+}
+.projectTwoLinks a:hover, .projectTwoLinks a:focus,
+.projectOneLinks a:hover,
+.projectOneLinks a:focus {
+  color: #3D48AE;
+}
+
 .contact {
   background-color: #DFE0FC;
   padding-top: 50px;
@@ -470,7 +488,7 @@ header .headerContainer .headerIcon img {
 }
 
 .contactText {
-  width: 50%;
+  width: 40%;
   padding-bottom: 20px;
 }
 .contactText h2 {
@@ -485,16 +503,17 @@ header .headerContainer .headerIcon img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
 }
 
 .gitHubLink,
 .linkedinLink,
 .instagramLink,
 .emailLink {
-  width: 8%;
+  width: 12%;
 }
 
 .form {

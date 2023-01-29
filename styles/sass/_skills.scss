@@ -6,23 +6,23 @@
     h2{
         font-family: "Nunito", sans-serif;
         height: 30px;
-    }
+    };
     p{
         font-family: "PT Sans", sans-serif;
-    }
+    };
     li{
         font-family: "PT Sans", sans-serif;
-    }
-}
+    };
+};
 
 .skillsText {
     width: 20%;
-}
+};
 
 .skillsContainer {
     display: flex;
     justify-content: space-evenly;
-}
+};
 
 .listOne ul,
 .listTwo ul, 
@@ -35,6 +35,6 @@
     li::before {
         content: "• ";
         color:#FBAF01 ;
-    }
-}
+    };
+};
 

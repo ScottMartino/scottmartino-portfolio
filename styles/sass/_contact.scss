@@ -2,68 +2,68 @@
     background-color: #DFE0FC;
     padding-top: 50px;
     padding-bottom: 50px;
-}
+};
 
 .contactContainer {
     display:flex;
-}
+};
 
 .contactText{
-    width:50%;
+    width:40%;
     padding-bottom: 20px;
     h2{
         font-family: "Nunito", sans-serif;
-    }
+    };
     p{
         font-family: "PT Sans", sans-serif;
         font-size: 16px;
-    }
-}
+    };
+};
 
 .contactLinks {
     display: flex;
-    justify-content: space-around;
-    width:80%;
-}
+    justify-content: space-between;
+    width:50%;
+};
 
 .gitHubLink,
 .linkedinLink,
 .instagramLink,
 .emailLink {
-    width: 8%;
-}
+    width: 12%;
+};
 
 .form {
     flex-basis: 65%;
-}
+};
 
 .getInTouch {
     flex-basis: 45%;
-}
+};
 
 .formInput label{
     font-family: "PT Sans", sans-serif;
     font-size: 15px;
-}
+};
 
 .formName {
     padding-right: 50%;
     margin-bottom: 10px;
     border: none;
-}
+};
 
 .formEmail {
     padding-right: 50%;
     margin-bottom: 10px;
     border: none;
-}
+};
 
 .formMessage {
     padding-right: 50%;
     padding-bottom: 25%;
     margin-bottom: 20px;
     border: none;
-}
+};
 
 .formButton {
     padding: 10px 20px 10px 20px;
@@ -74,4 +74,4 @@
     font-weight: 400;
     font-size: 15px;
     border: none;
-}
+};

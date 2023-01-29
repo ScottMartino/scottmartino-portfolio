@@ -22,11 +22,15 @@
 };
 
 .navBar a{
-    padding-left: 20px;
+    margin-left: 20px;
     font-family: "PT Sans", sans-serif;
     text-decoration: none;
     color: black;
     font-size: 15px;
+    &:hover,
+    &:focus{
+        color: blue;
+    };
 };
 
 a.getInTouch {

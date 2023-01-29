@@ -4,48 +4,63 @@
     .wrapper{
         display: flex;
         flex-direction: column;
-    }
+    };
     img {
         max-width: 70%;
         background-color: #E7E8EE;
-    }
+    };
     a {
         text-decoration: none;
-        background-color: #FBAF01;
         font-family: "PT Sans", sans-serif;
-        padding: 5px 10px 5px 10px;
-        color: black;
-        font-size: 15px;
+        color: #3D48AE;
+        &:hover,
+        &:focus{
+            color: #FBAF01;
+        }
     }
     h3{
         font-family: "Nunito", sans-serif;
-    }
+    };
     h4{
         font-family: "PT Sans", sans-serif;
         color: #3D48AE;
-    }
+    };
     p {
         font-family: "PT Sans", sans-serif;
-    }
-}
+    };
+};
 
 .projectTwoText {
     width: 50%;
-}
+};
 
 .projectOneText {
     width: 50%;
-}
+};
 
 .projectOne {
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
     align-items: center;
-}
+};
 
 .projectTwo {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-}
+};
+
+.projectTwoLinks a, 
+.projectOneLinks a{
+    text-decoration: none;
+    background-color: #FBAF01;
+    font-family: "PT Sans", sans-serif;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    font-size: 15px;
+    &:hover,
+    &:focus {
+        color: #3D48AE;
+    }
+};
