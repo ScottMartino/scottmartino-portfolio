@@ -14,7 +14,7 @@
     .projectTwoText,
     .projectOneText,
     .projectThreeText {
-        width: 60%;
+        width: 85%;
     };
     
     .projects{
@@ -55,6 +55,11 @@
         flex-direction: column;
         align-items: center;
     };
+    
+    .projects .wrapper{
+
+    }
+    
     .projectOne,
     .projectTwo,
     .projectThree{

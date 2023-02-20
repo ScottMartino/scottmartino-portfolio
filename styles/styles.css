@@ -474,11 +474,11 @@ header .headerContainer .headerIcon img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 10px;
+  width: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10px;
-  width: auto;
 }
 
 .projectThree {
@@ -650,7 +650,7 @@ footer {
   .projectTwoText,
   .projectOneText,
   .projectThreeText {
-    width: 60%;
+    width: 85%;
   }
   .projects {
     padding-top: 0;
