@@ -4,10 +4,6 @@
     padding-right: 5%;
     display: flex;
     justify-content: space-between;
-    position: sticky; top:0;
-    .navTitle{
-        width: 10%;
-    };
     p{
         font-family: "Ninuto", sans-serif;
         font-size: 40px;
@@ -27,6 +23,7 @@
     text-decoration: none;
     color: black;
     font-size: 15px;
+    transition: 0.5s;
     &:hover,
     &:focus{
         color: blue;
@@ -40,4 +37,5 @@ a.getInTouch {
     background-color: #FBAF01;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
+    border-radius: 5%;
 };

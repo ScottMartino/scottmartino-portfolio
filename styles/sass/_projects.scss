@@ -8,11 +8,14 @@
     img {
         max-width: 70%;
         background-color: #E7E8EE;
+        border-radius: 5%;
     };
     a {
         text-decoration: none;
         font-family: "PT Sans", sans-serif;
         color: #3D48AE;
+        border-radius: 5%;
+        transition: 0.5s;
         &:hover,
         &:focus{
             color: #FBAF01;
@@ -38,27 +41,44 @@
     width: 50%;
 };
 
+.projectThreeText {
+    width: 50%;
+}
+
 .projectOne {
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
     align-items: center;
+    width: auto;
 };
 
 .projectTwo {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+    width: auto;
+};
+
+.projectThree {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    align-items: center;
+    width: auto;
 };
 
 .projectTwoLinks a, 
-.projectOneLinks a{
+.projectOneLinks a,
+.projectThreeLinks a{
     text-decoration: none;
     background-color: #FBAF01;
     font-family: "PT Sans", sans-serif;
     padding: 5px 10px 5px 10px;
     color: black;
     font-size: 15px;
+    transition: 0.5s;
+
     &:hover,
     &:focus {
         color: #3D48AE;

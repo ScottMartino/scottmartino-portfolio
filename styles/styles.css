@@ -252,6 +252,11 @@ h1 {
   font-size: 75px;
 }
 
+h4 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+}
+
 .navBar {
   background-color: white;
   padding-left: 5%;
@@ -262,11 +267,6 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: sticky;
-  top: 0;
-}
-.navBar .navTitle {
-  width: 10%;
 }
 .navBar p {
   font-family: "Ninuto", sans-serif;
@@ -289,6 +289,8 @@ h1 {
   text-decoration: none;
   color: black;
   font-size: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .navBar a:hover, .navBar a:focus {
   color: blue;
@@ -301,6 +303,7 @@ a.getInTouch {
   background-color: #FBAF01;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  border-radius: 5%;
 }
 
 header {
@@ -334,6 +337,14 @@ header .headerContainer .headerIcon img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.aboutMe .aboutMeIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .aboutMe .aboutMeIcon img {
   max-width: 100%;
@@ -411,11 +422,15 @@ header .headerContainer .headerIcon img {
 .projects img {
   max-width: 70%;
   background-color: #E7E8EE;
+  border-radius: 5%;
 }
 .projects a {
   text-decoration: none;
   font-family: "PT Sans", sans-serif;
   color: #3D48AE;
+  border-radius: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .projects a:hover, .projects a:focus {
   color: #FBAF01;
@@ -439,6 +454,10 @@ header .headerContainer .headerIcon img {
   width: 50%;
 }
 
+.projectThreeText {
+  width: 50%;
+}
+
 .projectOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -448,6 +467,7 @@ header .headerContainer .headerIcon img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: auto;
 }
 
 .projectTwo {
@@ -458,20 +478,38 @@ header .headerContainer .headerIcon img {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10px;
+  width: auto;
+}
+
+.projectThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
 }
 
 .projectTwoLinks a,
-.projectOneLinks a {
+.projectOneLinks a,
+.projectThreeLinks a {
   text-decoration: none;
   background-color: #FBAF01;
   font-family: "PT Sans", sans-serif;
   padding: 5px 10px 5px 10px;
   color: black;
   font-size: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .projectTwoLinks a:hover, .projectTwoLinks a:focus,
 .projectOneLinks a:hover,
-.projectOneLinks a:focus {
+.projectOneLinks a:focus,
+.projectThreeLinks a:hover,
+.projectThreeLinks a:focus {
   color: #3D48AE;
 }
 
@@ -559,26 +597,59 @@ header .headerContainer .headerIcon img {
   font-weight: 400;
   font-size: 15px;
   border: none;
+  border-radius: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.formButton:hover, .formButton:focus {
+  color: #3D48AE;
 }
 
 footer {
   background-color: #3d48AE;
   padding-top: 5px;
   padding-bottom: 5px;
+  text-align: center;
+}
+
+.topButton {
+  display: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #FBAF01;
+  color: black;
+  cursor: pointer;
+  padding: 3px 10px 5px 10px;
+  border-radius: 5%;
+}
+
+.topButton:hover {
+  color: #3d48AE;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 950px) {
   .listOne ul,
-.listTwo ul,
-.listThree ul {
+  .listTwo ul,
+  .listThree ul {
     font-size: 15px;
+  }
+  .projectOne,
+  .projectTwo {
+    width: 100%;
   }
 }
 @media (max-width: 800px) {
-  .projectTwoText {
-    width: 60%;
-  }
-  .projectOneText {
+  .projectTwoText,
+  .projectOneText,
+  .projectThreeText {
     width: 60%;
   }
   .projects {
@@ -594,6 +665,18 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .projectOne,
+  .projectTwo,
+  .projectThree {
+    width: 100%;
+  }
+  .skillsContainer {
+    max-width: 100%;
+  }
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 685px) {
   .skillsContainer {
@@ -604,9 +687,13 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .skillsContainer li {
+    font-size: 2em;
   }
   .aboutMe .wrapper {
     -webkit-box-orient: vertical;
@@ -617,11 +704,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .projectOne {
+  .projectOne,
+  .projectTwo,
+  .projectThree {
     display: block;
-  }
-  .projectTwo {
-    display: block;
+    width: 120%;
   }
   .contactContainer {
     -webkit-box-orient: vertical;
@@ -635,11 +722,14 @@ footer {
   .form {
     padding-top: 30px;
   }
+  .aboutMe .aboutMeText {
+    max-width: 90%;
+  }
 }
 @media (max-width: 450px) {
   .formName,
-.formEmail,
-.formMessage {
+  .formEmail,
+  .formMessage {
     padding-right: 20%;
   }
   .navBar {
@@ -650,5 +740,34 @@ footer {
   }
   .navBar a {
     padding-left: 5px;
+  }
+  .skillsText {
+    width: 40%;
+  }
+  .projectOne,
+  .projectTwo,
+  .projectThree {
+    width: 145%;
+  }
+  .aboutMe .aboutMeText {
+    max-width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .navTitle p {
+    margin: 0;
+  }
+  .navLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navLinks a {
+    font-size: 1.25em;
+    padding-bottom: 10px;
   }
 }
